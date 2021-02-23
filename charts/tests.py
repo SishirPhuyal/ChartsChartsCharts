@@ -53,8 +53,7 @@ def chart_prediction(closing_prices):
   # plt.annotate('Long Term',fontsize=20,xy=(x_cordi[-1], y_cordi[-1]+(.01*scaler)), xytext=(x_cordi[-1], y_cordi[-1]+(scaler)),
   #            arrowprops=dict(facecolor='blue',alpha=0.3,shrink=1)
   #            )
-
-
+  
   circle1 = plt.Circle((closing_prices.index[-1], closing_prices[-1]), scaler, color='red')
   circle2 = plt.Circle((x_cordi[2], y_cordi[2]), scaler, color='dodgerblue')
   circle3 = plt.Circle((x_cordi[-1], y_cordi[-1]), scaler, color='darkgreen')
