@@ -10,7 +10,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-   <a id="mainnav" class="navbar-brand" href="{% url 'home' %}"><h2>Charts! Charts! Charts!</h2></a>
+   <a class="navbar-brand" href="{% url 'home' %}"><h2>Charts! Charts! Charts!</h2></a>
   <ul class="navbar-nav">
     <li class="nav-item">
         <a class="nav-link" href="{% url 'gallery' %}"><h3>Chart Gallery</h3></a>
@@ -29,15 +29,26 @@
 <div class="row">
         <div class="redcircle"><h4>Current</h4></div><h4 class="custom-text">Price</h4>
         <div class="bluecircle"><h4>Short</h4></div><h4 class="custom-text">Prediction</h4>
-        <div class="greencircle"><h4>Long</h4></div><h4 class="custom-text">Prediction</h4>
+        <div class="greencircle"><h4>Long</h4></div><h4 class="custom-text">Prediction</h4> <br>
+    <p> All predictions are based off of past moving averages!!!! <br>The colorful dotted lines on the chart shows different moving averages for the
+        past few weeks, which determines the possible flow of the market based on past data.<br> So the predictions are rarely accurate due to the forever
+        changing nature of the stock and forex markets, but I had fun creating the project.
+    </p>
 </div>
-
 </body>
 </html>
 
 <style>
     body{
         background: #5b9ea6;
+    }
+    p{
+        margin-left: 5%;
+        margin-right: 20%;
+        font-size: 30px;
+        color: azure;
+
+
     }
     #btn{
         margin-left: 5px;
